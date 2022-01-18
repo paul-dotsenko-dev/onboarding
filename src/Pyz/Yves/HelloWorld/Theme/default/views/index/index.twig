@@ -1,0 +1,21 @@
+{% extends template('page-layout-main') %}
+
+{% define data = {
+    helloWorld: _view.helloWorld
+} %}
+
+{% block headTitle %}
+    HelloWorld
+{% endblock %}
+
+{% block pageInfo %}{% endblock %}
+
+{% block content %}
+    <div style="padding-top: 10%; padding-bottom: 20%">
+        <h2 style="text-align: center">{{ data.helloWorld }}</h2>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <hr>
+{% endblock %}
